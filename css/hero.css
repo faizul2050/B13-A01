@@ -1,0 +1,89 @@
+.hero {
+    background: linear-gradient(rgba(26, 32, 44, 0.85), rgba(26, 32, 44, 0.9)), 
+                url('./');
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    margin-top: 60px; 
+}
+
+/* Animation Keyframes: Fade Up */
+@keyframes fadeUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+.badge {
+    background: rgba(255,255,255,0.2);
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 12px;
+    margin-bottom: 20px;
+    display: inline-block;
+    
+    opacity: 0;
+    animation: fadeUp 1s ease-out forwards;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    line-height: 1.2;
+    
+    opacity: 0;
+    animation: fadeUp 1s ease-out 0.3s forwards;
+}
+
+.hero h1 span {
+    color: var(--primary-color);
+}
+
+.hero p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    opacity: 0.9;
+    
+    opacity: 0;
+    animation: fadeUp 1s ease-out 0.6s forwards;
+}
+
+.hero-btns {
+    opacity: 0;
+    animation: fadeUp 1s ease-out 0.9s forwards;
+}
+
+/* TYPING ANIMATION STYLES*/
+
+.typing-text {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 4px solid var(--primary-color); 
+    width: 0;
+    
+
+    color: #ffffff !important; 
+    
+    animation: 
+        typing 3s steps(30, end) forwards 0.5s, 
+        blink .75s step-end infinite;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes blink {
+    from, to { border-color: transparent }
+    50% { border-color: var(--primary-color) }
+}
