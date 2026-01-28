@@ -44,3 +44,33 @@
     font-size: 24px;
     cursor: pointer;
 }
+
+/* NEON BUTTON ANIMATION (Get Early Access) */
+
+@keyframes neonPulse {
+    0% {
+        box-shadow: 0 0 5px var(--primary-color), 0 0 10px var(--primary-color);
+        border-color: var(--primary-color);
+    }
+    50% {
+        box-shadow: 0 0 15px var(--primary-color), 0 0 25px var(--primary-color);
+        border-color: #69f0ae; 
+    }
+    100% {
+        box-shadow: 0 0 5px var(--primary-color), 0 0 10px var(--primary-color);
+        border-color: var(--primary-color);
+    }
+}
+
+.nav-btn .btn-primary {
+    animation: neonPulse 2s infinite alternate; 
+    border: 2px solid var(--primary-color); 
+    transition: all 0.3s ease;
+}
+
+.nav-btn .btn-primary:hover {
+    animation: none;
+    background-color: var(--primary-color);
+    box-shadow: 0 0 20px var(--primary-color); 
+    transform: translateY(-2px);
+}

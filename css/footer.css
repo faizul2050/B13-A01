@@ -1,82 +1,85 @@
-/* General Reset */
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
-}
+/* FOOTER STYLE */
 
 .footer {
-    background: #001529; 
+    background-color: #0b1120;
     color: white;
-    padding: 40px 0 20px 0;
+    padding: 50px 0 30px;
 }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-/* Flexbox Layout for Top Section */
 .footer-top {
     display: flex;
-    justify-content: space-between; 
-    align-items: center; 
-    margin-bottom: 30px;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 30px;
 }
 
-.footer-logo img {
-    height: 50px; 
-    display: block;
+.logo-img {
+    height: 50px;
+    width: auto;
 }
 
-/* Social Section Styling */
 .footer-socials {
-    text-align: right;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
 }
 
 .social-title {
     font-size: 16px;
     font-weight: 500;
-    margin-bottom: 10px;
+    color: white;
+    margin: 0;
 }
 
 .social-icons {
     display: flex;
-    gap: 15px; 
+    gap: 12px;
 }
 
-.social-icons a {
-    color: white;
-    font-size: 20px;
-    text-decoration: none;
-    background: white; 
-    color: #001529; 
-    width: 30px;
-    height: 30px;
+.social-btn {
+    width: 32px;
+    height: 32px;
+    background-color: white;
+    color: #0b1120;
     border-radius: 50%;
+    
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: 0.3s;
+    
+    text-decoration: none;
+    font-size: 16px;
+    transition: all 0.3s ease;
 }
 
-.social-icons a:hover {
-    opacity: 0.8;
+.social-btn:hover {
+    background-color: var(--primary-color);
+    color: white;
+    transform: translateY(-3px);
 }
-
-/* Horizontal Line */
 .footer-divider {
     height: 1px;
-    background-color: rgba(255, 255, 255, 0.1); 
-    margin-bottom: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 100%;
+    margin-bottom: 25px;
 }
 
-/* Copyright Text */
 .copyright {
-    text-align: left; 
-    font-size: 14px;
-    opacity: 0.7;
     text-align: center;
+    font-size: 13px;
+    color: #94a3b8;
+    margin: 0;
+}
+
+@media screen and (max-width: 600px) {
+    .footer-top {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+    
+    .footer-socials {
+        align-items: center;
+    }
 }

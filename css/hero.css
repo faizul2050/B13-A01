@@ -1,5 +1,5 @@
 .hero {
-    background-image: url(../assets/hero-bg.png); /* Ensure this path is correct */
+    background-image: url(../assets/hero-bg.png); 
     background-size: cover;
     background-position: center;
     height: 90vh;
@@ -22,13 +22,15 @@
 }
 
 .badge {
-    background: rgba(255,255,255,0.2);
-    padding: 5px 15px;
+    background-color: white;
+    color: var(--primary-color);
+    background: rgba(255, 255, 255, 0.993);
+    padding: 6px 16px;
     border-radius: 20px;
-    font-size: 12px;
+    font-size: 13px;
+    font-weight: 600;
     margin-bottom: 20px;
     display: inline-block;
-    
     opacity: 0;
     animation: fadeUp 1s ease-out forwards;
 }
@@ -60,9 +62,7 @@
     animation: fadeUp 1s ease-out 0.9s forwards;
 }
 
-/* =========================================
-   BUTTON STYLES (Specific to Hero)
-   ========================================= */
+/*BUTTON STYLES*/
 
 /* Transparent Button Style */
 .btn-outline {
@@ -79,12 +79,10 @@
 
 .btn-outline:hover {
     background-color: white;
-    color: #333; /* Dark text on hover */
+    color: #333; 
 }
 
-/* =========================================
-   TYPING ANIMATION STYLES
-   ========================================= */
+/* TYPING ANIMATION STYLES */
 
 .typing-text {
     display: inline-block;
