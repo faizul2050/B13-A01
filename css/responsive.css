@@ -1,0 +1,40 @@
+/* Tablet (Max width 992px) */
+@media screen and (max-width: 992px) {
+    .cards-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
+    }
+    .hero h1 {
+        font-size: 2.8rem;
+    }
+}
+
+/* Mobile (Max width 768px) */
+@media screen and (max-width: 768px) {
+    /* Navbar changes */
+    .nav-links { display: none; }
+    .menu-icon { display: block; }
+    
+    /* Hero changes */
+    .hero h1 { font-size: 2rem; }
+    .hero-btns {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .btn-outline { margin-left: 0; }
+    
+    /* Features changes */
+    .cards-grid {
+        grid-template-columns: 1fr; /* 1 card per row */
+    }
+    
+    /* Solution changes */
+    .solution-wrapper {
+        flex-direction: column;
+    }
+    .solution-text { text-align: center; }
+    .check-list { 
+        text-align: left; 
+        display: inline-block; 
+    }
+}

@@ -1,0 +1,82 @@
+/* General Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.footer {
+    background: #001529; 
+    color: white;
+    padding: 40px 0 20px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Flexbox Layout for Top Section */
+.footer-top {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    margin-bottom: 30px;
+}
+
+.footer-logo img {
+    height: 50px; 
+    display: block;
+}
+
+/* Social Section Styling */
+.footer-socials {
+    text-align: right;
+}
+
+.social-title {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px; 
+}
+
+.social-icons a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    background: white; 
+    color: #001529; 
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    opacity: 0.8;
+}
+
+/* Horizontal Line */
+.footer-divider {
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.1); 
+    margin-bottom: 20px;
+}
+
+/* Copyright Text */
+.copyright {
+    text-align: left; 
+    font-size: 14px;
+    opacity: 0.7;
+    text-align: center;
+}

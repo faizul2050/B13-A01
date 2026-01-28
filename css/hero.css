@@ -1,6 +1,5 @@
 .hero {
-    background: linear-gradient(rgba(26, 32, 44, 0.85), rgba(26, 32, 44, 0.9)), 
-                url('./');
+    background-image: url(../assets/hero-bg.png); /* Ensure this path is correct */
     background-size: cover;
     background-position: center;
     height: 90vh;
@@ -61,7 +60,31 @@
     animation: fadeUp 1s ease-out 0.9s forwards;
 }
 
-/* TYPING ANIMATION STYLES*/
+/* =========================================
+   BUTTON STYLES (Specific to Hero)
+   ========================================= */
+
+/* Transparent Button Style */
+.btn-outline {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    padding: 10px 24px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+    margin-left: 10px;
+    transition: all 0.3s ease;
+}
+
+.btn-outline:hover {
+    background-color: white;
+    color: #333; /* Dark text on hover */
+}
+
+/* =========================================
+   TYPING ANIMATION STYLES
+   ========================================= */
 
 .typing-text {
     display: inline-block;
@@ -70,7 +93,7 @@
     border-right: 4px solid var(--primary-color); 
     width: 0;
     
-
+    /* Force text color to white */
     color: #ffffff !important; 
     
     animation: 

@@ -1,0 +1,98 @@
+/* --- Features Section --- */
+.features {
+    padding: 80px 0;
+    text-align: center;
+    background-color: #f9fafb;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    color: var(--dark-bg);
+}
+
+.section-subtitle {
+    color: var(--text-light);
+    margin-bottom: 50px;
+}
+
+/* Updated: Using Flexbox instead of Grid */
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+}
+
+.card {
+    flex: 1 1 250px; /* Allows cards to grow/shrink, min width 250px */
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.icon-box {
+    width: 50px;
+    height: 50px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+}
+
+.icon-red { background: #fee2e2; color: #ef4444; }
+
+/* --- Solution Section --- */
+.solution {
+    padding: 80px 0;
+    background: white;
+}
+
+.solution-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.solution-img { flex: 1; }
+.solution-img img { width: 100%; border-radius: 10px; }
+.solution-text { flex: 1; }
+
+.solution-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: var(--dark-bg);
+}
+
+/* UPDATED CHECKLIST STYLES */
+.check-list li {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: var(--text-dark);
+    font-weight: 500;
+}
+
+.check-icon {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: bold;
+    flex-shrink: 0;
+}
